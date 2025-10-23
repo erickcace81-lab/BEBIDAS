@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora el Cóctel</title>
+    <style>
+        /* ======== ESTILOS GENERALES ======== */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f1e7;
+            color: #4b2e12;
+        }
+
+        nav {
+            width: 250px;
+            background-color: #8d6e63;
+            color: #fff;
+            height: 100vh;
+            position: fixed;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 20px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #a1887f;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #6d4c41;
+            border-bottom: 2px solid #a1887f;
+            padding-bottom: 5px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff9f3;
+        }
+
+        th, td {
+            border: 1px solid #d7ccc8;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #a1887f;
+            color: white;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        ul li {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background-color: #8d6e63;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+
+        a {
+            color: #4b2e12;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú lateral -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#acerca">Acerca de</a></li>
+            <li><a href="#recetas">Recetas</a></li>
+            <li><a href="#mocktails">Mocktails</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#combos">Combos</a></li>
+            <li><a href="#curiosidades">Curiosidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#audio">Audio</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+        <header>
+            <h1>EXPLORA EL CÓCTEL</h1>
+            <p>El arte de mezclar sabores, aromas y experiencias.</p>
+        </header>
+
+        <!-- INICIO -->
+        <section id="inicio">
+            <h2>Bienvenido</h2>
+            <p>Explora el mundo de la coctelería, desde los clásicos internacionales hasta nuevas creaciones tropicales. Aprende, experimenta y sorprende a tus amigos con preparaciones únicas y deliciosas.</p>
+            <img src="imagenes/cocteles_variados.jpg" alt="Cócteles variados" width="500" height="333">
+        </section>
+
+        <!-- ACERCA DE -->
+        <section id="acerca">
+            <h2>Acerca de Nosotros</h2>
+            <p>Somos amantes de la mixología. En "Explora el Cóctel" compartimos recetas, historias y secretos de los mejores bartenders. Creemos que cada trago cuenta una historia y cada mezcla es una experiencia.</p>
+            <img src="imagenes/mixologia.webp" alt="Mixología profesional" width="1" height="444">
+        </section>
+
+        <!-- RECETAS -->
+        <section id="recetas">
+            <h2>Recetas Clásicas</h2>
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Licor Base</th>
+                    <th>Ingredientes</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>Mojito</td>
+                    <td>Ron</td>
+                    <td>Ron blanco, menta, azúcar, lima, agua con gas</td>
+                    <td>Refrescante cóctel cubano perfecto para el verano.</td>
+                </tr>
+                <tr>
+                    <td>Piña Colada</td>
+                    <td>Ron</td>
+                    <td>Ron blanco, crema de coco, jugo de piña, hielo</td>
+                    <td>Suave, tropical y cremoso, ideal para días soleados.</td>
+                </tr>
+                <tr>
+                    <td>Martini</td>
+                    <td>Ginebra</td>
+                    <td>Ginebra, vermut seco, aceituna</td>
+                    <td>Elegante y clásico, el cóctel por excelencia.</td>
+                </tr>
+                <tr>
+                    <td>Tequila Sunrise</td>
+                    <td>Tequila</td>
+                    <td>Tequila, jugo de naranja, granadina</td>
+                    <td>Hermoso degradado visual, dulce y frutal.</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- MOCKTAILS -->
+        <section id="mocktails">
+            <h2>Mocktails (Sin Alcohol)</h2>
+            <ul>
+                <li><strong>Virgin Mojito:</strong> Menta, azúcar, lima, agua con gas. Refrescante y natural.</li>
+                <li><strong>Sunset Fruit:</strong> Jugo de piña, naranja y frutilla. Dulce con un toque tropical.</li>
+                <li><strong>Berry Spark:</strong> Arándanos, limón, agua con gas. Ligero y antioxidante.</li>
+                <li><strong>Refresco de Coco:</strong> Leche de coco y hielo picado. Cremoso y tropical.</li>
+            </ul>
+            <img src="imagenes/combos.jpg" alt="Mocktails refrescantes" width="1" height="777">
+        </section>
+
+        <!-- HISTORIA -->
+        <section id="historia">
+            <h2>Historia del Cóctel</h2>
+            <p>El término “cóctel” nació en el siglo XIX en Estados Unidos. Originalmente se refería a mezclas simples de licor, azúcar, agua y amargos. Con el tiempo, la coctelería evolucionó hasta convertirse en una forma de arte que combina creatividad, técnica y presentación.</p>
+            <img src="imagenes/historia_coctel.webp" alt="Historia del cóctel" width="1" height="444">
+        </section>
+
+        <!-- COMBOS -->
+        <section id="combos">
+            <h2>Combos Especiales</h2>
+            <ul>
+                <li><strong>Combo Tropical:</strong> 2 Mojitos + 2 Piñas Coladas ($25)</li>
+                <li><strong>Combo Clásico:</strong> 3 Martinis + 2 Tequila Sunrise ($40)</li>
+                <li><strong>Combo Refrescante:</strong> 2 Virgin Mojitos + 2 Berry Spark ($18)</li>
+            </ul>
+        </section>
+
+        <!-- CURIOSIDADES -->
+        <section id="curiosidades">
+            <h2>Curiosidades de la Coctelería</h2>
+            <p>¿Sabías que el <strong>Bloody Mary</strong> fue inventado en París en la década de 1920? O que el <strong>Gin Tonic</strong> se creó originalmente como una bebida medicinal contra la malaria. Cada cóctel tiene un origen curioso que lo hace aún más fascinante.</p>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>📞 <strong>Teléfono:</strong> <a href="tel:+593979357856">0979 357 856</a></p>
+            <p>📧 <strong>Correo:</strong> <a href="mailto:exploracocktel@gmail.com">exploracocktel@gmail.com</a></p>
+            <p>🌐 <strong>Redes Sociales:</strong></p>
+            <p>Instagram: <a href="https://www.instagram.com/explora_cocktel" target="_blank">@explora_cocktel</a></p>
+            <p>Facebook: <a href="https://www.facebook.com/explora.cocktel" target="_blank">Explora el Cóctel</a></p>
+            <p>X: <a href="https://x.com/exploracocktel" target="_blank">@exploracocktel</a></p>
+        </section>
+
+        <!-- VIDEO -->
+        <section id="video">
+            <h2>Video Destacado</h2>
+            <video width="600" controls>
+                <source src="imagenes/video_coctel.mp4" type="video/mp4">
+                Tu navegador no soporta video HTML5.
+            </video>
+        </section>
+
+        <!-- AUDIO -->
+        <section id="audio">
+            <h2>Música de Fondo</h2>
+            <audio controls>
+                <source src="imagenes/audio_jazz.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio HTML5.
+            </audio>
+        </section>
+
+        <footer>
+            <p>© 2025 Explora el Cóctel | Creado con pasión por la mixología.</p>
+        </footer>
+    </div>
+</body>
+</html>
