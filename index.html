@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explora el Cóctel</title>
+    <link rel="icon" type="image/png" href="imagenes/icons8-cócteles-48.png">
     <style>
         /* ======== ESTILOS GENERALES ======== */
         body {
@@ -116,6 +117,69 @@
 
         a:hover {
             text-decoration: underline;
+        }
+
+        /* ======== ESTILO FORMULARIO ======== */
+        form {
+            background-color: #fff9f3;
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 500px;
+            margin-top: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #d7ccc8;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        .radio-group {
+            margin: 15px 0;
+        }
+
+        .radio-group label {
+            font-weight: normal;
+            margin-left: 5px;
+        }
+
+        .form-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            background-color: #a1887f;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #8d6e63;
+        }
+
+        input[type="reset"] {
+            background-color: #d7ccc8;
+            color: #4b2e12;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #bcaaa4;
         }
     </style>
 </head>
@@ -239,6 +303,43 @@
             <p>Instagram: <a href="https://www.instagram.com/explora_cocktel" target="_blank">@explora_cocktel</a></p>
             <p>Facebook: <a href="https://www.facebook.com/explora.cocktel" target="_blank">Explora el Cóctel</a></p>
             <p>X: <a href="https://x.com/exploracocktel" target="_blank">@exploracocktel</a></p>
+
+            <!-- FORMULARIO CON RADIO BUTTONS -->
+            <h3>🍹 ¡Queremos saber de ti!</h3>
+            <p>¿Tienes una duda, sugerencia o receta para compartir? 💬  
+            ¡Déjanos tu mensaje y cuéntanos qué tipo de bebida prefieres!</p>
+
+            <form action="/action_page.php" method="post">
+                <label for="fname">Nombre:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Tu nombre" required><br>
+
+                <label for="lname">Apellido:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Tu apellido" required><br>
+
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required><br>
+
+                <!-- RADIO BUTTONS -->
+                <div class="radio-group">
+                    <p><strong>🍸 Elige tu tipo de bebida favorita:</strong></p>
+                    <input type="radio" id="coctel" name="bebida" value="Cóctel" required>
+                    <label for="coctel">Cóctel (con alcohol)</label><br>
+                    <input type="radio" id="mocktail" name="bebida" value="Mocktail">
+                    <label for="mocktail">Mocktail (sin alcohol)</label><br>
+                    <input type="radio" id="otro" name="bebida" value="Otro">
+                    <label for="otro">Otro tipo de bebida</label>
+                </div>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea><br>
+
+                <div class="form-buttons">
+                    <input type="submit" value="🍸 Enviar">
+                    <input type="reset" value="❌ Cancelar">
+                </div>
+            </form>
+
+            <p>Al hacer clic en <strong>“Enviar”</strong>, tus datos se enviarán de forma segura a nuestro equipo de mixólogos.</p>
         </section>
 
         <!-- VIDEO -->
